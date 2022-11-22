@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Banner from "../../../Components/Banner/Banner";
 
 const banner = {
@@ -12,9 +12,11 @@ const banner = {
 
 const Home = () => {
   return (
-    <section>
-      <Banner {...banner} />
-    </section>
+    <Fragment>
+      <header>
+        <Banner {...banner} />
+      </header>
+    </Fragment>
   );
 };
 
